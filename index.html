@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #room1, #room2, #room3, #room4 {
+            position: absolute;
+        }
+        #room1 {
+            margin-left: -660px;
+            margin-top: 50px;
+        }
+        #room2 {
+            margin-left: -220px;
+            margin-top: 50px;
+        }
+        #room3 {
+            margin-left: -660px;
+            margin-top: 200px;
+        }
+        #room4 {
+            margin-left: -220px;
+            margin-top: 200px;
+        }
+        .sect {
+            margin: 40px 80px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="sect">
+        <h1>Room Status Simulation</h1>
+        <h2>IU Praxisprojekt II</h2>
+    </div>
+
+    <div class="sect">
+        <img src="images/building.png" width="800px">
+        <img src="images/room_free.png" id="room1" width="75px">
+        <img src="images/room_free.png" id="room2" width="75px">
+        <img src="images/room_free.png" id="room3" width="75px">
+        <img src="images/room_blocked.png" id="room4" width="75px">
+    </div>
+
+    <p class="sect">Nächste Aktualisierung in: <span id="refreshCountdown">60</span> Sekunden.</p>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/1.0.21/jquery.csv.min.js" integrity="sha512-Y8iWYJDo6HiTo5xtml1g4QqHtl/PO1w+dmUpQfQSOTqKNsMhExfyPN2ncNAe9JuJUSKzwK/b6oaNPop4MXzkwg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="room-tool.js"></script>
+</body>
+</html>
